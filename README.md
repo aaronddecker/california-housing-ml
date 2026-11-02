@@ -8,8 +8,8 @@
 {{Was macht das Projekt, für wen, und welche Frage beantwortet es? Am Ende ergänzt du eine Kurzfassung des Ergebnisses in zwei bis drei Sätzen.}}
 
 ## 2. Team
-- Gruppe: {{Namen}}
-- Projektleitung: {{Name}}
+- Gruppe: 4
+- Projektleitung: Aaron
 
 ## 3. Projektstruktur und Datenfluss
 - Notebooks: `notebooks/01_data_understanding`, `02_preparation_modeling`, `03_evaluation_report`.
