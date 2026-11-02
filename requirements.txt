@@ -1,0 +1,8 @@
+# California Housing: Abhängigkeiten
+# Installation: python -m pip install -r requirements.txt
+pandas>=3
+numpy
+matplotlib
+scikit-learn
+joblib
+ipykernel

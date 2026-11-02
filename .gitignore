@@ -1,0 +1,18 @@
+# Erzeugte Daten (das Vorbereitungs-Notebook legt sie an)
+data/raw/california_housing.csv
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+*.sqlite
+*.db
+
+# Modelle
+models/
+
+# Python und Notebooks
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
