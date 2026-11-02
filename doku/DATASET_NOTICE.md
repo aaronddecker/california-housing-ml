@@ -5,17 +5,6 @@
 ## Datensatz
 California Housing: Zensusdaten 1990 je Blockgruppe in Kalifornien (20.640 Zeilen, 8 Merkmale und der Median-Hauswert als Zielwert).
 
-| Merkmal | Einheit |
-| `MedInc` | 10.000 US-Dollar pro Jahr |
-| `HouseAge` | Jahr |
-| `AveRooms` | Räume |
-| `AveBedrms` | Schlafzimmer |
-| `Population` | Personenanzahl |
-| `AveOccup` | Durchschnittsanzahl von Bewohner pro Haushalt |
-| `Latitude` | Längengrad
-| `Longitude` | 
-| `MedHouseVal` |
-
 ## Quelle
 - Bezug: `sklearn.datasets.fetch_california_housing(as_frame=True)` (scikit-learn), geladen durch `notebooks/00_vorbereitung.ipynb`.
 - Herkunft laut scikit-learn-Dokumentation: StatLib-Repository (<https://lib.stat.cmu.edu/datasets/houses.zip>), abgeleitet aus dem US-Zensus 1990.
