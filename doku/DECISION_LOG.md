@@ -6,5 +6,5 @@
 
 | Datum | Entscheidung | Alternativen | Begründung (mit Zahl oder Beleg) | Wer |
 | --- | --- | --- | --- | --- |
-| | | | | |
+| 03.11.2026 | Gedeckelte Werte werden zunächst behalten und später getrennt ausgewertet. | Entfernen aller Ausreißer oder pauschales Begrenzen extremer Werte. | Die auffälligen Werte sind nicht automatisch fehlerhaft und können reale Besonderheiten der Wohngebiete darstellen. | Projektteam |
 | | | | | |
