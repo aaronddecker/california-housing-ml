@@ -11,7 +11,7 @@ California Housing: Zensusdaten 1990 je Blockgruppe in Kalifornien (20.640 Zeile
 - Originalveröffentlichung: Pace, R. K. & Barry, R. (1997).
 
 ## Abrufdatum
-{{Datum, an dem das Vorbereitungs-Notebook zum ersten Mal erfolgreich lief (JJJJ-MM-TT).}}
+2026-11-02
 
 ## Nutzung im Kurs
 - Die Daten werden über scikit-learn bezogen und im Kurs zu Übungszwecken genutzt.
@@ -22,7 +22,10 @@ Pace, R. K. & Barry, R. (1997). Sparse Spatial Autoregressions. *Statistics and 
 
 ## Veränderungen durch die Projektgruppe
 - Ablage als `data/raw/california_housing.csv` und SQLite-Tabelle `blockgruppen`, keine inhaltliche Änderung.
-- {{Weitere Änderungen, zum Beispiel abgeleitete Merkmale, Filter oder entfernte Zeilen.}}
+- Aufteilung in 80 % Trainingsdaten und 20 % Testdaten (random_state=42).
+- Log-Transformation der Merkmale AveRooms, AveBedrms, Population und AveOccup für die ausgewählte Modellvariante.
+- Keine Ausreißer oder gedeckelten Zielwerte entfernt.
+- Für die Fehleranalyse wurden Residuen, Einkommensgruppen und geografische Regionen abgeleitet.
 
 ## Datenschutz / personenbezogene Daten
 Die Daten sind über Blockgruppen zusammengefasst und enthalten keine Angaben zu einzelnen Personen oder Haushalten. Der Datenstand ist 1990.
