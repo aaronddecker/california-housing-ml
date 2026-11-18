@@ -1,7 +1,5 @@
 # Problem Canvas
 
-> Gate 1. Kurz und prüfbar halten, Stichpunkte genügen. Ersetze jeden Platzhalter `{{…}}` durch deinen Text.
-
 ## Ziel
 Ein Regressionsmodell soll den Median-Hauswert einer Blockgruppe schätzen.
 
@@ -9,18 +7,21 @@ Ein Regressionsmodell soll den Median-Hauswert einer Blockgruppe schätzen.
 Wie gut ist die Schätzung im Durchschnitt, in welchen Gruppen und Regionen ist sie unzuverlässig, und welche Aussagen dürfen daraus nicht abgeleitet werden?
 
 ## Nutzen / Stakeholder
-Die fiktive Regionalverwaltung kann dadurch grob den typischen Hauswert einer Blockgruppe abschätzen. Außerdem erkennen Sie welche Einschätzungen nicht von der Vorhersage übernommen werden sollen, da erkannt wird welche Blockgruppen unzuverlässig vorhergesagt werden.
+Die fiktive Regionalverwaltung kann mithilfe des Modells den typischen Hauswert einzelner Blockgruppen grob einschätzen. Durch die zusätzliche Fehleranalyse wird deutlich, in welchen Einkommensgruppen und Regionen die Vorhersagen besonders unzuverlässig sind. So kann die Planungsabteilung erkennen, wann Schätzwerte nur eingeschränkt als Entscheidungsgrundlage geeignet sind.
 
 ## Annahmen
 - Der Datensatz enthält rund 20.640 Zeilen. Jede Zeile beschreibt eine Blockgruppe in Kalifornien.
 - Die Zielspalte `MedHouseVal` gibt den Median-Hauswert in Einheiten von 100.000 US-Dollar an.
 - Alle anderen 8 vorhandenen Merkmale wie Einkommen, Gebäudealter und Bevölkerungsdaten werden für die Vorhersage verwendet.
-- Die Daten werden als Grundlage für die Schätzung betrachtet.
+- - Die historischen Zensusdaten aus dem Jahr 1990 werden als Grundlage für eine methodische Untersuchung verwendet und bilden keine aktuellen Immobilienpreise ab.
 
 ## Grenzen / Nicht-Ziele
-- Es wird sich auf die Blockgruppen aus dem Staat Californien beschränkt. Alle anderen Staaten werden in den Vorhersagen nicht berücksichtigt.
-- Es kann keine hundertprozentige Gewährleistung garantiert werden.
+- Die Untersuchung beschränkt sich auf kalifornische Zensus-Blockgruppen.
+- Der Datensatz basiert auf Zensusdaten aus dem Jahr 1990 und erlaubt keine Aussagen über aktuelle Immobilienpreise.
+- Das Modell schätzt Median-Hauswerte von Blockgruppen, nicht die Preise einzelner Immobilien.
+- Die Zielwerte sind bei etwa 500.001 US-Dollar gedeckelt, wodurch besonders hohe Hauswerte nur eingeschränkt abgebildet werden.
+- Das Modell dient einer groben Einschätzung und ersetzt keine professionelle Immobilienbewertung.
+- Aus den Modellvorhersagen lassen sich keine kausalen Zusammenhänge ableiten.
 
 ## Erfolgskriterium
-{{Woran erkennst du am Ende ein gelungenes Ergebnis? Es muss prüfbar sein und darf nicht „bester Score“ lauten.}}
-Das Modell ist messbar besser als die Baseline. Wo es unzuverlässig ist, belegen wir mit Zahlen und übersetzen es in Einsatzgrenzen, mit denen die Planungsabteilung arbeiten kann.
+Das Modell erreicht bei der 5-Fold-Cross-Validation einen niedrigeren MAE als die Baseline (`DummyRegressor`). Zusätzlich werden die Vorhersagefehler nach Einkommensgruppen, gedeckelten Zielwerten und Regionen untersucht und anhand konkreter Kennzahlen dokumentiert. Daraus werden nachvollziehbare Einsatzgrenzen für die fiktive Planungsabteilung abgeleitet.

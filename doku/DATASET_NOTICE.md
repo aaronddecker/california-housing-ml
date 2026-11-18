@@ -1,7 +1,5 @@
 # Dataset Notice
 
-> Ergänze die Abschnitte mit Platzhaltern `{{…}}` (Tag 7). Die übrigen Angaben sind vorbereitet.
-
 ## Datensatz
 California Housing: Zensusdaten 1990 je Blockgruppe in Kalifornien (20.640 Zeilen, 8 Merkmale und der Median-Hauswert als Zielwert).
 
@@ -21,11 +19,11 @@ California Housing: Zensusdaten 1990 je Blockgruppe in Kalifornien (20.640 Zeile
 Pace, R. K. & Barry, R. (1997). Sparse Spatial Autoregressions. *Statistics and Probability Letters*, 33, 291–297. Bezogen über scikit-learn (<https://scikit-learn.org/stable/datasets/real_world.html#california-housing-dataset>).
 
 ## Veränderungen durch die Projektgruppe
-- Ablage als `data/raw/california_housing.csv` und SQLite-Tabelle `blockgruppen`, keine inhaltliche Änderung.
-- Aufteilung in 80 % Trainingsdaten und 20 % Testdaten (random_state=42).
-- Log-Transformation der Merkmale AveRooms, AveBedrms, Population und AveOccup für die ausgewählte Modellvariante.
+- Ablage als `data/raw/california_housing.csv` und in der SQLite-Tabelle `blockgruppen`, ohne inhaltliche Veränderung der Rohdaten.
+- Aufteilung in 80 % Trainingsdaten und 20 % Testdaten (`random_state=42`).
+- Log-Transformation der Merkmale `AveRooms`, `AveBedrms`, `Population` und `AveOccup` für die ausgewählte Modellvariante.
 - Keine Ausreißer oder gedeckelten Zielwerte entfernt.
 - Für die Fehleranalyse wurden Residuen, Einkommensgruppen und geografische Regionen abgeleitet.
 
 ## Datenschutz / personenbezogene Daten
-Die Daten sind über Blockgruppen zusammengefasst und enthalten keine Angaben zu einzelnen Personen oder Haushalten. Der Datenstand ist 1990.
+Der Datensatz enthält aggregierte statistische Angaben auf Ebene kalifornischer Zensus-Blockgruppen. Es sind keine direkten personenbezogenen Identifikatoren oder individuellen Haushaltsdatensätze enthalten. Die zugrunde liegenden Zensusdaten stammen aus dem Jahr 1990.
