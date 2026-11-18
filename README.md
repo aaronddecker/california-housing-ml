@@ -15,7 +15,7 @@ Die Fehleranalyse zeigt größere Abweichungen bei hohen Einkommen und gedeckelt
 - `notebooks/` – Jupyter-Notebooks zur Datenvorbereitung, Analyse, Modellierung und Evaluation.
 - `doku/` – Projektdokumentation, Modellentscheidungen und Fehleranalyse.
 - `presentation/` – Dokumentation der Abschlusspräsentation.
-- `src/` – Ergänzende Informationen zum Quellcode.
+- - `PROJEKTAUFTRAG.md` – Ausgangssituation, Projektziele, Vorgehensweise und mögliche Weiterentwicklungen.
 
 **Datenfluss:** scikit-learn → CSV/SQLite → Datenanalyse → Aufbereitung → Modellierung → Evaluation.
 
