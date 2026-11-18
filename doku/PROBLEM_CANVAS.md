@@ -13,7 +13,7 @@ Die fiktive Regionalverwaltung kann mithilfe des Modells den typischen Hauswert 
 - Der Datensatz enthält rund 20.640 Zeilen. Jede Zeile beschreibt eine Blockgruppe in Kalifornien.
 - Die Zielspalte `MedHouseVal` gibt den Median-Hauswert in Einheiten von 100.000 US-Dollar an.
 - Alle anderen 8 vorhandenen Merkmale wie Einkommen, Gebäudealter und Bevölkerungsdaten werden für die Vorhersage verwendet.
-- - Die historischen Zensusdaten aus dem Jahr 1990 werden als Grundlage für eine methodische Untersuchung verwendet und bilden keine aktuellen Immobilienpreise ab.
+- Die historischen Zensusdaten aus dem Jahr 1990 werden als Grundlage für eine methodische Untersuchung verwendet und bilden keine aktuellen Immobilienpreise ab.
 
 ## Grenzen / Nicht-Ziele
 - Die Untersuchung beschränkt sich auf kalifornische Zensus-Blockgruppen.
